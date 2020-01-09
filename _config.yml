@@ -11,6 +11,15 @@ author: Hywell flack
 language: en
 timezone: 'UTC'
 
+menu:
+  Home: /
+  Archives: /archives
+  Find: /find
+  Professsional: /professsional
+  Classic: /classic
+  Rss: /rss
+  About: /about
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://yoursite.com
