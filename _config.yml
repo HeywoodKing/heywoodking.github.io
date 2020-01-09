@@ -98,7 +98,12 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
+<<<<<<< HEAD
   type: git
   repo: git@github.com:HeywoodKing/heywoodking.github.io.git
   branch: master
 
+=======
+  type: 'git'
+  repo: git@github.com:HeywoodKing/heywoodking.github.io.git
+>>>>>>> d52451d1e8144c9a575da48ee2821330101d57d7
