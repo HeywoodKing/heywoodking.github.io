@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: hywell 的世界
-subtitle: 'Heywoodking 的苹果园 hywell 的世界'
-description: '一个有理想有抱负的草根猨'
+title: hywell 的猨犸神兽
+subtitle: '人生苦短，我用Python'
+description: '一个有理想有抱负的草根猨，'
 keywords: python
 author: Hywell flack
 language: en
@@ -98,7 +98,7 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: 'git'
+  type: git
   repo: git@github.com:HeywoodKing/heywoodking.github.io.git
   branch: master
 
