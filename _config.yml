@@ -3,13 +3,22 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo Test
-subtitle: 'welcome'
-description: 'you are welcome'
-keywords: ['aaa','bbb','ccc']
-author: hywell
+title: hywell 的猨犸神兽
+subtitle: '人生苦短，我用Python'
+description: '一个有理想有抱负的草根猨，毕业于中国，就职于东厂，喜欢coding，热爱大海，目前是一枚python，胆小认生，不易相处，年轻无为，卖马为生。'
+keywords: python
+author: Hywell flack
 language: en
-timezone: ''
+timezone: 'UTC'
+
+menu:
+  Home: /
+  Archives: /archives
+  Find: /find
+  Professsional: /professsional
+  Classic: /classic
+  Rss: /rss
+  About: /about
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -101,3 +110,4 @@ deploy:
   type: git
   repo: git@github.com:HeywoodKing/heywoodking.github.io.git
   branch: master
+
