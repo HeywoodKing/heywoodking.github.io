@@ -1,5 +1,5 @@
 ---
-title: Hello World
+title: pip
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
@@ -28,6 +28,8 @@ pip install package_name --trusted-host pypi.douban.com -i http://pypi.douban.co
 
 pip --default-timeout=100 install package_name
 ```
+
+<!-- more -->
 
 ## 卸载包 
 ```

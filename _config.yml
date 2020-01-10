@@ -11,14 +11,14 @@ author: Hywell flack
 language: en
 timezone: 'UTC'
 
-menu:
-  Home: /
-  Archives: /archives
-  Find: /find
-  Professsional: /professsional
-  Classic: /classic
-  Rss: /rss
-  About: /about
+# menu:
+#   Home: /
+#   Archives: /archives
+#   Find: /find
+#   Professsional: /professsional
+#   Classic: /classic
+#   Rss: /rss
+#   About: /about
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -102,7 +102,8 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+# theme: landscape
+theme: yilia
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -111,3 +112,22 @@ deploy:
   repo: git@github.com:HeywoodKing/heywoodking.github.io.git
   branch: master
 
+
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true
