@@ -7,18 +7,9 @@ title: hywell 的猨犸神兽
 subtitle: '人生苦短，我用Python'
 description: '一个有理想有抱负的草根猨，毕业于中国，就职于东厂，喜欢coding，热爱大海，吃的是山珍海味，穿的是粗布麻衣，住的是高楼大厦，走的是田间小巷；目前是一枚草根IT猨，胆不小但走正道，心不小但不张狂，年轻无为，卖马为生。'
 keywords: python
-author: Hywell flack
+author: Hywell
 language: en
 timezone: 'UTC'
-
-# menu:
-#   Home: /
-#   Archives: /archives
-#   Find: /find
-#   Professsional: /professsional
-#   Classic: /classic
-#   Rss: /rss
-#   About: /about
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
