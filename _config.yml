@@ -5,7 +5,7 @@
 # Site
 title: hywell 的猨犸神兽
 subtitle: '人生苦短，我用Python'
-description: '一个有理想有抱负的草根猨，毕业于中国，就职于东厂，喜欢coding，热爱大海，吃的是山珍海味，穿的是粗布麻衣，住的是高楼大厦，走的是田间小巷；目前是一枚草根IT猨，胆不小但走正道，心不小但不张狂，年轻无为，卖马为生。'
+description: '一个有理想有抱负的草根猨，<br>毕业于中国，就职于东厂，<br><br>喜欢coding，热爱大海，<br>吃的是山珍海味，穿的是粗布麻衣；<br>住的是高楼大厦，走的是田间小巷；<br>胆不小但走正道，心不大且吞天地。<br>目前是一枚东厂管理员，年轻无为，卖马为生。'
 keywords: python
 author: Hywell
 language: en
@@ -32,7 +32,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :year-:month-:day-:title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
