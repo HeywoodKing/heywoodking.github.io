@@ -205,6 +205,114 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-python3开启web服务" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/13/python3%E5%BC%80%E5%90%AFweb%E6%9C%8D%E5%8A%A1/">python3 开启web服务</a>
+    </h1>
+  
+
+        
+        <a href="/2020/01/13/python3%E5%BC%80%E5%90%AFweb%E6%9C%8D%E5%8A%A1/" class="archive-article-date">
+  	<time datetime="2020-01-12T19:09:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="python3-开启web服务"><a href="#python3-开启web服务" class="headerlink" title="python3 开启web服务"></a>python3 开启web服务</h3><ol>
+<li>基本方式<br>Python中自带了简单的服务器程序，能较容易地打开服务，在python3中将原来的SimpleHTTPServer命令改为了http.server，使用方法如下：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd 目标路径</span><br><span class="line">进入目标路径，执行开启服务命令，将当前路径会作为web服务的工作目录</span><br><span class="line">python3 -m http.server</span><br></pre></td></tr></table></figure>
+成功启动后显示<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Serving HTTP on 0.0.0.0 port 8000 (http:&#x2F;&#x2F;0.0.0.0:8000&#x2F;) ...</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>如果需要后台运行，可在命令后加”&amp;”符号，Ctrl+C不会关闭服务，如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python3 -m http.server &amp;</span><br></pre></td></tr></table></figure>
+
+<p>如果要保持服务，则在命令前加nohup以忽略所有挂断信号，如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nohup python3 -m http.server</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><p>指定端口<br>如果不使用默认端口，可在开启时附带端口参数，如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python3 -m http.server 8001</span><br></pre></td></tr></table></figure>
+<p>则会在8001端口打开http服务</p>
+</li>
+<li><p>使用Web服务<br>可以使用<code>http://0.0.0.0:8000/</code>查看www目录下的网页文件，并且提供下载功能，若无index.html则会显示目录下的文件。<br>也可以使用ifconfig命令查看本机IP并使用</p>
+</li>
+</ol>
+<h3 id="疑难杂症"><a href="#疑难杂症" class="headerlink" title="疑难杂症"></a>疑难杂症</h3>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">web服务器</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/IT技术//" class="article-tag-list-link color5">IT技术</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/01/13/python3%E5%BC%80%E5%90%AFweb%E6%9C%8D%E5%8A%A1/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-5种开源协议介绍" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -1096,11 +1204,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">知识点</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">中华文化</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1112,7 +1228,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">中华文化</a>
+                <a href="javascript:void(0)" class="js-tag color2">web服务器</a>
               </li>
             
             <div class="clearfix"></div>
