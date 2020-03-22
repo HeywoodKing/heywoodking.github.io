@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>python3模块之timeit | hywell 的猨犸神兽</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="python timeit模块性能测量,该模块提供了一种简单的方法来计算一小段 Python 代码的耗时 与 timeit 的精细粒度级别相反， profile 和 pstats 模块提供了用于在较大的代码块中识别时间关键部分的工具 基本示例12345from timeit import TimerTimer(&#39;t&#x3D;a; a&#x3D;b; b&#x3D;t&#39;, &amp;#39">
+  <meta name="description" content="timeit性能测量,该模块提供了一种简单的方法来计算一小段 Python 代码的耗时 与 timeit 的精细粒度级别相反， profile 和 pstats 模块提供了用于在较大的代码块中识别时间关键部分的工具">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python3模块之timeit">
 <meta property="og:url" content="http://yoursite.com/2020/01/14/python3%E6%A8%A1%E5%9D%97%E4%B9%8Btimeit/index.html">
 <meta property="og:site_name" content="hywell 的猨犸神兽">
-<meta property="og:description" content="python timeit模块性能测量,该模块提供了一种简单的方法来计算一小段 Python 代码的耗时 与 timeit 的精细粒度级别相反， profile 和 pstats 模块提供了用于在较大的代码块中识别时间关键部分的工具 基本示例12345from timeit import TimerTimer(&#39;t&#x3D;a; a&#x3D;b; b&#x3D;t&#39;, &amp;#39">
+<meta property="og:description" content="timeit性能测量,该模块提供了一种简单的方法来计算一小段 Python 代码的耗时 与 timeit 的精细粒度级别相反， profile 和 pstats 模块提供了用于在较大的代码块中识别时间关键部分的工具">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-01-13T23:51:01.000Z">
-<meta property="article:modified_time" content="2020-01-13T15:59:21.613Z">
+<meta property="article:modified_time" content="2020-01-13T16:04:10.065Z">
 <meta property="article:author" content="Hywell">
 <meta property="article:tag" content="IT技术">
 <meta property="article:tag" content="python3">
@@ -226,13 +226,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="python-timeit模块"><a href="#python-timeit模块" class="headerlink" title="python timeit模块"></a>python timeit模块</h2><p>性能测量,该模块提供了一种简单的方法来计算一小段 Python 代码的耗时</p>
+        <h2 id="timeit"><a href="#timeit" class="headerlink" title="timeit"></a>timeit</h2><p>性能测量,该模块提供了一种简单的方法来计算一小段 Python 代码的耗时</p>
 <p>与 timeit 的精细粒度级别相反， profile 和 pstats 模块提供了用于在较大的代码块中识别时间关键部分的工具</p>
+<a id="more"></a>
+
+
 <h3 id="基本示例"><a href="#基本示例" class="headerlink" title="基本示例"></a>基本示例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">from timeit import Timer</span><br><span class="line">Timer(&#39;t&#x3D;a; a&#x3D;b; b&#x3D;t&#39;, &#39;a&#x3D;1,b&#x3D;2&#39;).timeit()</span><br><span class="line">&lt;!-- 0.57535828626024577 --&gt;</span><br><span class="line">Timer(&#39;a,b &#x3D; b,a&#39;, &#39;a&#x3D;1; b&#x3D;2&#39;).timeit()</span><br><span class="line">&lt;!-- 0.54962537085770791 --&gt;</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 命令行 --&gt;</span><br><span class="line">python3 -m timeit &#39;&quot;-&quot;.join(str(n) for n in range(100))&#39;</span><br><span class="line">&lt;!-- 10000 loops, best of 5: 30.2 usec per loop --&gt;</span><br><span class="line">python3 -m timeit &#39;&quot;-&quot;.join([str(n) for n in range(100)])&#39;</span><br><span class="line">&lt;!-- 10000 loops, best of 5: 27.5 usec per loop --&gt;</span><br><span class="line">python3 -m timeit &#39;&quot;-&quot;.join(map(str, range(100)))&#39;</span><br><span class="line">&lt;!-- 10000 loops, best of 5: 23.2 usec per loop --&gt;</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
 
 
 <p>通过 Python 接口 实现</p>
@@ -555,7 +556,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">中华文化</a>
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -563,11 +564,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+                <a href="javascript:void(0)" class="js-tag color3">英语</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">python3</a>
+                <a href="javascript:void(0)" class="js-tag color5">中华文化</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -575,7 +576,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">英语</a>
+                <a href="javascript:void(0)" class="js-tag color3">python3</a>
               </li>
             
             <div class="clearfix"></div>

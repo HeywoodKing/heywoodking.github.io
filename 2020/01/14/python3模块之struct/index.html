@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>python3模块之struct | hywell 的猨犸神兽</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="python struct模块 按照指定格式将Python数据转换为字符串,该字符串为字节流,如网络传输时,不能传输int,此时先将int转化为字节流,然后再发送; 按照指定格式将字节流转换为Python指定的数据类型; 处理二进制数据,如果用struct来处理文件的话,需要用’wb’,’rb’以二进制(字节流)写,读的方式来处理文件; 处理c语言中的结构体;  1struct.pack(fmt,">
+  <meta name="description" content="struct 按照指定格式将Python数据转换为字符串,该字符串为字节流,如网络传输时,不能传输int,此时先将int转化为字节流,然后再发送; 按照指定格式将字节流转换为Python指定的数据类型; 处理二进制数据,如果用struct来处理文件的话,需要用’wb’,’rb’以二进制(字节流)写,读的方式来处理文件; 处理c语言中的结构体;  1struct.pack(fmt,v1,v2…)">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python3模块之struct">
 <meta property="og:url" content="http://yoursite.com/2020/01/14/python3%E6%A8%A1%E5%9D%97%E4%B9%8Bstruct/index.html">
 <meta property="og:site_name" content="hywell 的猨犸神兽">
-<meta property="og:description" content="python struct模块 按照指定格式将Python数据转换为字符串,该字符串为字节流,如网络传输时,不能传输int,此时先将int转化为字节流,然后再发送; 按照指定格式将字节流转换为Python指定的数据类型; 处理二进制数据,如果用struct来处理文件的话,需要用’wb’,’rb’以二进制(字节流)写,读的方式来处理文件; 处理c语言中的结构体;  1struct.pack(fmt,">
+<meta property="og:description" content="struct 按照指定格式将Python数据转换为字符串,该字符串为字节流,如网络传输时,不能传输int,此时先将int转化为字节流,然后再发送; 按照指定格式将字节流转换为Python指定的数据类型; 处理二进制数据,如果用struct来处理文件的话,需要用’wb’,’rb’以二进制(字节流)写,读的方式来处理文件; 处理c语言中的结构体;  1struct.pack(fmt,v1,v2…)">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-01-13T23:50:38.000Z">
-<meta property="article:modified_time" content="2020-01-13T15:59:08.832Z">
+<meta property="article:modified_time" content="2020-01-13T16:04:27.236Z">
 <meta property="article:author" content="Hywell">
 <meta property="article:tag" content="IT技术">
 <meta property="article:tag" content="python3">
@@ -226,17 +226,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="python-struct模块"><a href="#python-struct模块" class="headerlink" title="python struct模块"></a>python struct模块</h2><ul>
+        <h2 id="struct"><a href="#struct" class="headerlink" title="struct"></a>struct</h2><ul>
 <li>按照指定格式将Python数据转换为字符串,该字符串为字节流,如网络传输时,不能传输int,此时先将int转化为字节流,然后再发送;</li>
 <li>按照指定格式将字节流转换为Python指定的数据类型;</li>
 <li>处理二进制数据,如果用struct来处理文件的话,需要用’wb’,’rb’以二进制(字节流)写,读的方式来处理文件;</li>
 <li>处理c语言中的结构体;</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">struct.pack(fmt,v1,v2…)</span><br></pre></td></tr></table></figure>
-<p>return string<br>把任意数据类型变成bytes,按照给定的格式(fmt),把数据转换成字符串(字节流),并将该字符串返回.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; import struct</span><br><span class="line">&gt;&gt;&gt; struct.pack(&#39;&gt;I&#39;, 10240099)</span><br><span class="line">b&#39;\x00\x9c@c&#39;</span><br></pre></td></tr></table></figure>
 
 <a id="more"></a>
+
+
+<p>return string<br>把任意数据类型变成bytes,按照给定的格式(fmt),把数据转换成字符串(字节流),并将该字符串返回.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; import struct</span><br><span class="line">&gt;&gt;&gt; struct.pack(&#39;&gt;I&#39;, 10240099)</span><br><span class="line">b&#39;\x00\x9c@c&#39;</span><br></pre></td></tr></table></figure>
 
 
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sturct.pack_into(fmt,buffer,offset,v1,v2…)</span><br></pre></td></tr></table></figure>
@@ -688,7 +690,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">中华文化</a>
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -696,11 +698,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+                <a href="javascript:void(0)" class="js-tag color3">英语</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">python3</a>
+                <a href="javascript:void(0)" class="js-tag color5">中华文化</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -708,7 +710,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">英语</a>
+                <a href="javascript:void(0)" class="js-tag color3">python3</a>
               </li>
             
             <div class="clearfix"></div>

@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>python3模块之os | hywell 的猨犸神兽</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="python os模块123456789101112131415161718192021222324252627282930os.getcwd()                 获取当前工作目录，即当前python脚本工作的目录路径os.chdir(&quot;dirname&quot;)         改变当前脚本工作目录；相当于shell下cdos.curdir">
+  <meta name="description" content="os123456789101112131415161718192021222324252627282930os.getcwd()                 获取当前工作目录，即当前python脚本工作的目录路径os.chdir(&quot;dirname&quot;)         改变当前脚本工作目录；相当于shell下cdos.curdir                   返回当前">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python3模块之os">
 <meta property="og:url" content="http://yoursite.com/2020/01/14/python3%E6%A8%A1%E5%9D%97%E4%B9%8Bos/index.html">
 <meta property="og:site_name" content="hywell 的猨犸神兽">
-<meta property="og:description" content="python os模块123456789101112131415161718192021222324252627282930os.getcwd()                 获取当前工作目录，即当前python脚本工作的目录路径os.chdir(&quot;dirname&quot;)         改变当前脚本工作目录；相当于shell下cdos.curdir">
+<meta property="og:description" content="os123456789101112131415161718192021222324252627282930os.getcwd()                 获取当前工作目录，即当前python脚本工作的目录路径os.chdir(&quot;dirname&quot;)         改变当前脚本工作目录；相当于shell下cdos.curdir                   返回当前">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-01-13T23:49:56.000Z">
-<meta property="article:modified_time" content="2020-01-13T15:53:33.776Z">
+<meta property="article:modified_time" content="2020-01-13T16:01:32.327Z">
 <meta property="article:author" content="Hywell">
 <meta property="article:tag" content="IT技术">
 <meta property="article:tag" content="python3">
@@ -226,7 +226,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="python-os模块"><a href="#python-os模块" class="headerlink" title="python os模块"></a>python os模块</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">os.getcwd()                 获取当前工作目录，即当前python脚本工作的目录路径</span><br><span class="line">os.chdir(&quot;dirname&quot;)         改变当前脚本工作目录；相当于shell下cd</span><br><span class="line">os.curdir                   返回当前目录: (&#39;.&#39;)</span><br><span class="line">os.pardir                   获取当前目录的父目录字符串名：(&#39;..&#39;)</span><br><span class="line">os.makedirs(&#39;dir1&#x2F;dir2&#39;)    可生成多层递归目录</span><br><span class="line">os.removedirs(&#39;dirname1&#39;)   若目录为空，则删除，并递归到上一级目录，如若也为空，则删除，依此类推</span><br><span class="line">os.mkdir(&#39;dirname&#39;)         生成单级目录；相当于shell中mkdir dirname</span><br><span class="line">os.rmdir(&#39;dirname&#39;)         删除单级空目录，若目录不为空则无法删除，报错；相当于shell中rmdir dirname</span><br><span class="line">os.listdir(&#39;dirname&#39;)       列出指定目录下的所有文件和子目录，包括隐藏文件，并以列表方式打印</span><br><span class="line">os.remove()                 删除一个文件</span><br><span class="line">os.rename(&quot;oldname&quot;,&quot;new&quot;)  重命名文件&#x2F;目录</span><br><span class="line">os.stat(&#39;path&#x2F;filename&#39;)    获取文件&#x2F;目录信息</span><br><span class="line">os.stat(&quot;32.png&quot;).st_size   检测要发送文件的大小</span><br><span class="line">os.sep                      操作系统特定的路径分隔符，win下为&quot;\\&quot;,Linux下为&quot;&#x2F;&quot;</span><br><span class="line">os.linesep                  当前平台使用的行终止符，win下为&quot;\t\n&quot;,Linux下为&quot;\n&quot;</span><br><span class="line">os.pathsep                  用于分割文件路径的字符串</span><br><span class="line">os.name                     字符串指示当前使用平台。win-&gt;&#39;nt&#39;; Linux-&gt;&#39;posix&#39;</span><br><span class="line">os.system(&quot;bash command&quot;)   运行shell命令，直接显示</span><br><span class="line">os.environ                  获取系统环境变量</span><br><span class="line">os.path.abspath(path)       返回path规范化的绝对路径</span><br><span class="line">os.path.split(path)         将path分割成目录和文件名二元组返回</span><br><span class="line">os.path.dirname(path)       返回path的目录。其实就是os.path.split(path)的第一个元素</span><br><span class="line">os.path.basename(path)      返回path最后的文件名。如何path以／或\结尾，那么就会返回空值。即os.path.split(path)的第二个元素</span><br><span class="line">os.path.exists(path)        如果path存在，返回True；如果path不存在，返回False</span><br><span class="line">os.path.isabs(path)         如果path是绝对路径，返回True</span><br><span class="line">os.path.isfile(path)        如果path是一个存在的文件，返回True。否则返回False</span><br><span class="line">os.path.isdir(path)         如果path是一个存在的目录，则返回True。否则返回False</span><br><span class="line">os.path.join(path1[, path2[, ...]])  将多个路径组合后返回，第一个绝对路径之前的参数将被忽略</span><br><span class="line">os.path.getatime(path)      返回path所指向的文件或者目录的最后存取时间</span><br><span class="line">os.path.getmtime(path)      返回path所指向的文件或者目录的最后修改时间</span><br></pre></td></tr></table></figure>
+        <h2 id="os"><a href="#os" class="headerlink" title="os"></a>os</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">os.getcwd()                 获取当前工作目录，即当前python脚本工作的目录路径</span><br><span class="line">os.chdir(&quot;dirname&quot;)         改变当前脚本工作目录；相当于shell下cd</span><br><span class="line">os.curdir                   返回当前目录: (&#39;.&#39;)</span><br><span class="line">os.pardir                   获取当前目录的父目录字符串名：(&#39;..&#39;)</span><br><span class="line">os.makedirs(&#39;dir1&#x2F;dir2&#39;)    可生成多层递归目录</span><br><span class="line">os.removedirs(&#39;dirname1&#39;)   若目录为空，则删除，并递归到上一级目录，如若也为空，则删除，依此类推</span><br><span class="line">os.mkdir(&#39;dirname&#39;)         生成单级目录；相当于shell中mkdir dirname</span><br><span class="line">os.rmdir(&#39;dirname&#39;)         删除单级空目录，若目录不为空则无法删除，报错；相当于shell中rmdir dirname</span><br><span class="line">os.listdir(&#39;dirname&#39;)       列出指定目录下的所有文件和子目录，包括隐藏文件，并以列表方式打印</span><br><span class="line">os.remove()                 删除一个文件</span><br><span class="line">os.rename(&quot;oldname&quot;,&quot;new&quot;)  重命名文件&#x2F;目录</span><br><span class="line">os.stat(&#39;path&#x2F;filename&#39;)    获取文件&#x2F;目录信息</span><br><span class="line">os.stat(&quot;32.png&quot;).st_size   检测要发送文件的大小</span><br><span class="line">os.sep                      操作系统特定的路径分隔符，win下为&quot;\\&quot;,Linux下为&quot;&#x2F;&quot;</span><br><span class="line">os.linesep                  当前平台使用的行终止符，win下为&quot;\t\n&quot;,Linux下为&quot;\n&quot;</span><br><span class="line">os.pathsep                  用于分割文件路径的字符串</span><br><span class="line">os.name                     字符串指示当前使用平台。win-&gt;&#39;nt&#39;; Linux-&gt;&#39;posix&#39;</span><br><span class="line">os.system(&quot;bash command&quot;)   运行shell命令，直接显示</span><br><span class="line">os.environ                  获取系统环境变量</span><br><span class="line">os.path.abspath(path)       返回path规范化的绝对路径</span><br><span class="line">os.path.split(path)         将path分割成目录和文件名二元组返回</span><br><span class="line">os.path.dirname(path)       返回path的目录。其实就是os.path.split(path)的第一个元素</span><br><span class="line">os.path.basename(path)      返回path最后的文件名。如何path以／或\结尾，那么就会返回空值。即os.path.split(path)的第二个元素</span><br><span class="line">os.path.exists(path)        如果path存在，返回True；如果path不存在，返回False</span><br><span class="line">os.path.isabs(path)         如果path是绝对路径，返回True</span><br><span class="line">os.path.isfile(path)        如果path是一个存在的文件，返回True。否则返回False</span><br><span class="line">os.path.isdir(path)         如果path是一个存在的目录，则返回True。否则返回False</span><br><span class="line">os.path.join(path1[, path2[, ...]])  将多个路径组合后返回，第一个绝对路径之前的参数将被忽略</span><br><span class="line">os.path.getatime(path)      返回path所指向的文件或者目录的最后存取时间</span><br><span class="line">os.path.getmtime(path)      返回path所指向的文件或者目录的最后修改时间</span><br></pre></td></tr></table></figure>
       
 
       
@@ -494,7 +494,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">中华文化</a>
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -502,11 +502,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+                <a href="javascript:void(0)" class="js-tag color3">英语</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">python3</a>
+                <a href="javascript:void(0)" class="js-tag color5">中华文化</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -514,7 +514,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">英语</a>
+                <a href="javascript:void(0)" class="js-tag color3">python3</a>
               </li>
             
             <div class="clearfix"></div>

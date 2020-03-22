@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>python3模块之gc | hywell 的猨犸神兽</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="python gc模块垃圾回收器接口,此模块提供可选的垃圾回收器的接口，提供的功能包括：关闭收集器、调整收集频率、设置调试选项,它同时提供对回收器找到但是无法释放的不可达对象的访问,由于 Python 使用了带有引用计数的回收器，如果你确定你的程序不会产生循环引用，你可以关闭回收器。可以通过调用 gc.disable() 关闭自动垃圾回收。若要调试一个存在内存泄漏的程序，调用 gc.set_deb">
+  <meta name="description" content="gc垃圾回收器接口,此模块提供可选的垃圾回收器的接口，提供的功能包括：关闭收集器、调整收集频率、设置调试选项,它同时提供对回收器找到但是无法释放的不可达对象的访问,由于 Python 使用了带有引用计数的回收器，如果你确定你的程序不会产生循环引用，你可以关闭回收器。可以通过调用 gc.disable() 关闭自动垃圾回收。若要调试一个存在内存泄漏的程序，调用 gc.set_debug(gc.DEB">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python3模块之gc">
 <meta property="og:url" content="http://yoursite.com/2020/01/14/python3%E6%A8%A1%E5%9D%97%E4%B9%8Bgc/index.html">
 <meta property="og:site_name" content="hywell 的猨犸神兽">
-<meta property="og:description" content="python gc模块垃圾回收器接口,此模块提供可选的垃圾回收器的接口，提供的功能包括：关闭收集器、调整收集频率、设置调试选项,它同时提供对回收器找到但是无法释放的不可达对象的访问,由于 Python 使用了带有引用计数的回收器，如果你确定你的程序不会产生循环引用，你可以关闭回收器。可以通过调用 gc.disable() 关闭自动垃圾回收。若要调试一个存在内存泄漏的程序，调用 gc.set_deb">
+<meta property="og:description" content="gc垃圾回收器接口,此模块提供可选的垃圾回收器的接口，提供的功能包括：关闭收集器、调整收集频率、设置调试选项,它同时提供对回收器找到但是无法释放的不可达对象的访问,由于 Python 使用了带有引用计数的回收器，如果你确定你的程序不会产生循环引用，你可以关闭回收器。可以通过调用 gc.disable() 关闭自动垃圾回收。若要调试一个存在内存泄漏的程序，调用 gc.set_debug(gc.DEB">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-01-13T23:49:41.000Z">
-<meta property="article:modified_time" content="2020-01-13T15:58:41.723Z">
+<meta property="article:modified_time" content="2020-01-13T16:01:20.715Z">
 <meta property="article:author" content="Hywell">
 <meta property="article:tag" content="IT技术">
 <meta property="article:tag" content="python3">
@@ -226,7 +226,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="python-gc模块"><a href="#python-gc模块" class="headerlink" title="python gc模块"></a>python gc模块</h2><p>垃圾回收器接口,此模块提供可选的垃圾回收器的接口，提供的功能包括：关闭收集器、调整收集频率、设置调试选项,它同时提供对回收器找到但是无法释放的不可达对象的访问,由于 Python 使用了带有引用计数的回收器，如果你确定你的程序不会产生循环引用，你可以关闭回收器。可以通过调用 gc.disable() 关闭自动垃圾回收。若要调试一个存在内存泄漏的程序，调用 gc.set_debug(gc.DEBUG_LEAK) ；需要注意的是，它包含 gc.DEBUG_SAVEALL ，使得被垃圾回收的对象会被存放在 gc.garbage 中以待检查。</p>
+        <h2 id="gc"><a href="#gc" class="headerlink" title="gc"></a>gc</h2><p>垃圾回收器接口,此模块提供可选的垃圾回收器的接口，提供的功能包括：关闭收集器、调整收集频率、设置调试选项,它同时提供对回收器找到但是无法释放的不可达对象的访问,由于 Python 使用了带有引用计数的回收器，如果你确定你的程序不会产生循环引用，你可以关闭回收器。可以通过调用 gc.disable() 关闭自动垃圾回收。若要调试一个存在内存泄漏的程序，调用 gc.set_debug(gc.DEBUG_LEAK) ；需要注意的是，它包含 gc.DEBUG_SAVEALL ，使得被垃圾回收的对象会被存放在 gc.garbage 中以待检查。</p>
 <a id="more"></a>
 
 
@@ -530,7 +530,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">中华文化</a>
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -538,11 +538,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+                <a href="javascript:void(0)" class="js-tag color3">英语</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">python3</a>
+                <a href="javascript:void(0)" class="js-tag color5">中华文化</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -550,7 +550,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">英语</a>
+                <a href="javascript:void(0)" class="js-tag color3">python3</a>
               </li>
             
             <div class="clearfix"></div>

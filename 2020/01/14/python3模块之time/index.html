@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>python3模块之time | hywell 的猨犸神兽</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="python time模块12345678910111213141516171819202122232425262728293031323334353637383940time.sleep()    让程序停留一定时间在执行time.time()     获取当前系统的时间戳time.ctime()    获取当前系统字符串格式时间【无参】，将时间戳转换成字符串格式时间【有参】time.gmtim">
+  <meta name="description" content="timeeg:time.time()">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python3模块之time">
 <meta property="og:url" content="http://yoursite.com/2020/01/14/python3%E6%A8%A1%E5%9D%97%E4%B9%8Btime/index.html">
 <meta property="og:site_name" content="hywell 的猨犸神兽">
-<meta property="og:description" content="python time模块12345678910111213141516171819202122232425262728293031323334353637383940time.sleep()    让程序停留一定时间在执行time.time()     获取当前系统的时间戳time.ctime()    获取当前系统字符串格式时间【无参】，将时间戳转换成字符串格式时间【有参】time.gmtim">
+<meta property="og:description" content="timeeg:time.time()">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-01-13T23:50:53.000Z">
-<meta property="article:modified_time" content="2020-01-13T15:59:15.520Z">
+<meta property="article:modified_time" content="2020-01-13T16:03:48.970Z">
 <meta property="article:author" content="Hywell">
 <meta property="article:tag" content="IT技术">
 <meta property="article:tag" content="python3">
@@ -226,7 +226,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="python-time模块"><a href="#python-time模块" class="headerlink" title="python time模块"></a>python time模块</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">time.sleep()    让程序停留一定时间在执行</span><br><span class="line">time.time()     获取当前系统的时间戳</span><br><span class="line">time.ctime()    获取当前系统字符串格式时间【无参】，将时间戳转换成字符串格式时间【有参】</span><br><span class="line">time.gmtime()   格式化获取当前系统的时间【无参】，格式化返回时间戳的时间【有参】</span><br><span class="line">time.localtime()    格式化获取当前系统的本地时间【无参】，格式化返回时间戳的时间【有参】</span><br><span class="line">time.mktime()   将系统当前时间转换成时间戳【有参】</span><br><span class="line">time.strftime()     将系统本地时间转换成指定的字符串格式【有参】</span><br><span class="line">time.strptime()     将字符串格式时间转换成格式化时间对象【有参】</span><br><span class="line">time.clock()        返回处理器时间,3.3开始已废弃</span><br><span class="line">time.process_time()     返回处理器时间,3.3开始已废弃</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;!-- more --&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">格式标识符表</span><br><span class="line"></span><br><span class="line">%y 两位数的年份表示（00-99）</span><br><span class="line">%Y 四位数的年份表示（000-9999）</span><br><span class="line">%m 月份（01-12）</span><br><span class="line">%d 月内中的一天（0-31）</span><br><span class="line">%H 24小时制小时数（0-23）</span><br><span class="line">%I 12小时制小时数（01-12） </span><br><span class="line">%M 分钟数（00&#x3D;59）</span><br><span class="line">%S 秒（00-59）</span><br><span class="line"></span><br><span class="line">%a 本地简化星期名称</span><br><span class="line">%A 本地完整星期名称</span><br><span class="line">%b 本地简化的月份名称</span><br><span class="line">%B 本地完整的月份名称</span><br><span class="line">%c 本地相应的日期表示和时间表示</span><br><span class="line">%j 年内的一天（001-366）</span><br><span class="line">%p 本地A.M.或P.M.的等价符</span><br><span class="line">%U 一年中的星期数（00-53）星期天为星期的开始</span><br><span class="line">%w 星期（0-6），星期天为星期的开始</span><br><span class="line">%W 一年中的星期数（00-53）星期一为星期的开始</span><br><span class="line">%x 本地相应的日期表示</span><br><span class="line">%X 本地相应的时间表示</span><br><span class="line">%Z 当前时区的名称</span><br><span class="line">%% %号本身</span><br></pre></td></tr></table></figure>
+        <h2 id="time"><a href="#time" class="headerlink" title="time"></a>time</h2><p>eg:<br>time.time()</p>
+<a id="more"></a>
+
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">time.sleep()    让程序停留一定时间在执行</span><br><span class="line">time.time()     获取当前系统的时间戳</span><br><span class="line">time.ctime()    获取当前系统字符串格式时间【无参】，将时间戳转换成字符串格式时间【有参】</span><br><span class="line">time.gmtime()   格式化获取当前系统的时间【无参】，格式化返回时间戳的时间【有参】</span><br><span class="line">time.localtime()    格式化获取当前系统的本地时间【无参】，格式化返回时间戳的时间【有参】</span><br><span class="line">time.mktime()   将系统当前时间转换成时间戳【有参】</span><br><span class="line">time.strftime()     将系统本地时间转换成指定的字符串格式【有参】</span><br><span class="line">time.strptime()     将字符串格式时间转换成格式化时间对象【有参】</span><br><span class="line">time.clock()        返回处理器时间,3.3开始已废弃</span><br><span class="line">time.process_time()     返回处理器时间,3.3开始已废弃</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">格式标识符表</span><br><span class="line"></span><br><span class="line">%y 两位数的年份表示（00-99）</span><br><span class="line">%Y 四位数的年份表示（000-9999）</span><br><span class="line">%m 月份（01-12）</span><br><span class="line">%d 月内中的一天（0-31）</span><br><span class="line">%H 24小时制小时数（0-23）</span><br><span class="line">%I 12小时制小时数（01-12） </span><br><span class="line">%M 分钟数（00&#x3D;59）</span><br><span class="line">%S 秒（00-59）</span><br><span class="line"></span><br><span class="line">%a 本地简化星期名称</span><br><span class="line">%A 本地完整星期名称</span><br><span class="line">%b 本地简化的月份名称</span><br><span class="line">%B 本地完整的月份名称</span><br><span class="line">%c 本地相应的日期表示和时间表示</span><br><span class="line">%j 年内的一天（001-366）</span><br><span class="line">%p 本地A.M.或P.M.的等价符</span><br><span class="line">%U 一年中的星期数（00-53）星期天为星期的开始</span><br><span class="line">%w 星期（0-6），星期天为星期的开始</span><br><span class="line">%W 一年中的星期数（00-53）星期一为星期的开始</span><br><span class="line">%x 本地相应的日期表示</span><br><span class="line">%X 本地相应的时间表示</span><br><span class="line">%Z 当前时区的名称</span><br><span class="line">%% %号本身</span><br></pre></td></tr></table></figure>
       
 
       
@@ -494,7 +498,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">中华文化</a>
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -502,11 +506,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+                <a href="javascript:void(0)" class="js-tag color3">英语</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">python3</a>
+                <a href="javascript:void(0)" class="js-tag color5">中华文化</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -514,7 +518,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">英语</a>
+                <a href="javascript:void(0)" class="js-tag color3">python3</a>
               </li>
             
             <div class="clearfix"></div>
